@@ -1,0 +1,11 @@
+.current-score{
+
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.status{
+
+	color:  red;
+	font-weight: bold;
+}

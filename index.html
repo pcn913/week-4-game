@@ -1,0 +1,132 @@
+<!-- Coin Flip HTML -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <!--reset all first=-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <div class="jumbotron">
+    <h1 class="text-center"><strong>CrystalsCollector!</strong></h1>
+    </div>
+    <div class="container instructions">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                	<p>
+        			You will be given a random number at the start of the game.
+        			</p>
+
+        			<p>
+        			There are a four crystals below.  By clicking on a crystal you
+        			will add a specific amount of points to your total score.
+        			</p>
+
+        			<p>
+        			You win the game by matching your total score to random number,
+        			you lose the game if your total score goes above the random number.
+        			</p>
+
+        			<p>
+        			The value of each crystal is hidden from you until you click on it.
+        			</p>
+
+        			<p>
+        			Each time when the game starts, the game will change the values of each crystal.
+        			</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">score to guess</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h1 class="guess-score"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">total win/losses</h3>
+                    </div>
+                    <div class="panel-body">
+                    <p><status-tag class="status"></status-tag></p>
+                    <p>wins: <wins-tag class="wins">0</wins-tag></p>
+                    <p>losses: <losses-tag class="losses">0<losses-tag></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">click on a crystal below</h3>
+                    </div>
+                    <div class="panel-body crystals">
+                        <!--<img class="crystal-image1" value="" src="assets/images/1.jpg">
+                        <img class="crystal-image2" value="" src="assets/images/2.jpg">
+                        <img class="crystal-image3" value="" src="assets/images/3.jpg">
+                        <img class="crystal-image4" value="" src="assets/images/4.jpg">-->
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-footer text-center">images courtesy of <a target="_new" href="http://www.kidsmathgamesonline.com/pictures/shapes.html">kids math games</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">your total score is</h3>
+                    </div>
+                    <div class="panel-body current-score">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
